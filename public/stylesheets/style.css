@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+  -moz-user-select: none;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+section.top-nav {
+  width: 100vw;
+  background-color: #2b6e74;
+  color: #b6b6b6;
+}
+
+div.top-nav-info {
+  line-height: 3em;
+  font-size: 1.5em;
+  font-weight: bolder;
+
+  width: 75%;
+  padding-left: 1em;
+  float: left;
+}
+
+div.top-nav-login,
+div.top-nav-logout,
+div.top-nav-signup {
+  line-height: 4.5em;
+  font-size: 1em;
+  width: 5%;
+  float: right;
+  text-align: center;
+}
+
+div.top-nav-login:hover,
+div.top-nav-logout:hover,
+div.top-nav-signup:hover {
+  background-color: #b6b6b6;
+  color: #2b6e74;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+section.authenticate,
+section.registration {
+  width: 30%;
+  top: 25%;
+  left: 35%;
+  position: absolute;
+  display: none;
+}
+
+div.authenticate-info,
+div.registration-info {
+  margin: 1em;
+  font-weight: bold;
+  color: #2b6e74;
+}
+
+input.authenticate-email,
+input.authenticate-password,
+input.registration-name,
+input.registration-email,
+input.registration-pw,
+input.registration-confirm-pw {
+  width: 80%;
+  line-height: 2.5em;
+  display: block;
+  font-size: 1em;
+  margin: 1em;
+  padding-left: 1em;
+}
+
+div.authenticate-verify,
+div.authenticate-cancel,
+div.registration-create,
+div.registration-cancel {
+  line-height: 2.5em;
+  width: 25%;
+  color: #b6b6b6;
+  text-align: center;
+  background-color: #2b6e74;
+  display: inline-block;
+  border-radius: 1em;
+
+  margin-top: 1em;
+}
+
+div.authenticate-verify,
+div.registration-create {
+  margin-left: 15%;
+  margin-right: 10%;
+}
+
+div.authenticate-verify:hover,
+div.authenticate-cancel:hover,
+div.registration-create:hover,
+div.registration-cancel:hover {
+  background-color: #b6b6b6;
+  color: #2b6e74;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+div.create-account {
+  line-height: 2em;
+  background-color: #faefb7;
+  text-align: center;
+  color: #581112;
+
+  width: 50%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 1em;
+  margin-left: 25%;
+}
+
+
+
